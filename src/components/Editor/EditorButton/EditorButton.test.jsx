@@ -1,9 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { test, expect } from '@testing-library/jest-dom';
 import EditorButton from './EditorButton';
 
+const mockOnClick = jest.fn();
+
 test('renders button with text', () => {
-  render(<EditorButton text='test' />);
-  const editorButton = screen.getAllByText('test');
+  const expectedText = 'test';
+  render(<EditorButton text={expectedText} onClick={mockOnClick} />);
+  const editorButton = screen.getAllByText(expectedText)[0];
+  expect(editorButton).toHaveTextContent(expectedText);
 });
