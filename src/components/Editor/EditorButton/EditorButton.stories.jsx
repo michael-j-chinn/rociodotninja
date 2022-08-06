@@ -11,17 +11,17 @@ export function Default() {
 }
 
 export function Bold() {
-  return <EditorButton text="B" styles="bold" />;
+  return <EditorButton text='B' styles='bold' />;
 }
 
 export function Italic() {
-  return <EditorButton text="I" styles="italic" />;
+  return <EditorButton text='I' styles='italic' />;
 }
 
 export function Underline() {
-  return <EditorButton text="U" styles="underline" />;
+  return <EditorButton text='U' styles='underline' />;
 }
 
 export function Clickable() {
-  return <EditorButton text="Ping" onClick={() => alert('pong')} />;
+  return <EditorButton text='Ping' onClick={() => alert('pong')} />;
 }
