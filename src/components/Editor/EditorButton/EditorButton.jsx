@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './EditorButton.css';
 
-function EditorIcon(props) {
+function EditorButton(props) {
   const { styles, text, onClick } = props;
   return (
     <button
       type='button'
-      className={`editor-icon ${styles}`}
+      className={`editor-button ${styles}`}
       onClick={onClick}
       onKeyPress={onClick}
     >
@@ -16,14 +16,14 @@ function EditorIcon(props) {
   );
 }
 
-EditorIcon.propTypes = {
+EditorButton.propTypes = {
   styles: PropTypes.string,
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
-EditorIcon.defaultProps = {
+EditorButton.defaultProps = {
   styles: '',
 };
 
-export default EditorIcon;
+export default EditorButton;

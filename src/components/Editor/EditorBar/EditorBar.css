@@ -1,0 +1,14 @@
+.editor-bar {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    padding: 5px;
+}
+
+.editor-bar > .editor-button {
+    margin-right: 5px;
+}
+
+.editor-bar > .editor-button:last-child {
+    margin-right: 0px;
+}

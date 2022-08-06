@@ -4,6 +4,5 @@ import App from './App';
 
 test('renders empty App', () => {
   render(<App />);
-  const mainElement = screen.getByRole('main');
-  expect(mainElement).toBeEmptyDOMElement();
+  expect(screen.getByRole('main')).toBeEmptyDOMElement();
 });
