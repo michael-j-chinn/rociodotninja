@@ -2,7 +2,7 @@ import React from 'react';
 import EditorButton from './EditorButton';
 
 export default {
-  title: 'EditorButton',
+  title: 'Editor/EditorButton',
   component: EditorButton,
 };
 
