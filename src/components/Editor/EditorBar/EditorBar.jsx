@@ -7,12 +7,11 @@ function EditorBar(props) {
   const { buttonOptions } = props;
 
   return (
-    <div className='editor-bar' data-testid='editor-bar-container'>
+    <div role='toolbar' className='editor-bar z-depth-2'>
       {buttonOptions.map((option) => (
         <EditorButton
-          key={option.text}
-          styles={option.styles}
-          text={option.text}
+          key={option.icon}
+          icon={option.icon}
           onClick={option.onClick}
         />
       ))}
@@ -23,9 +22,8 @@ function EditorBar(props) {
 EditorBar.propTypes = {
   buttonOptions: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.string.isRequired,
-      styles: PropTypes.string,
-      onClick: PropTypes.func,
+      icon: PropTypes.string.isRequired,
+      onClick: PropTypes.func.isRequired,
     })
   ),
 };

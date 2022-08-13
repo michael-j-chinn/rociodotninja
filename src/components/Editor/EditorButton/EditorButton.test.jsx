@@ -4,9 +4,9 @@ import EditorButton from './EditorButton';
 
 const mockOnClick = jest.fn();
 
-test('renders button with text', () => {
-  const expectedText = 'test';
-  render(<EditorButton text={expectedText} onClick={mockOnClick} />);
-  const editorButton = screen.getAllByText(expectedText)[0];
+test('renders button', () => {
+  const expectedText = 'format_bold';
+  render(<EditorButton icon={expectedText} onClick={mockOnClick} />);
+  const editorButton = screen.getByRole('button');
   expect(editorButton).toHaveTextContent(expectedText);
 });

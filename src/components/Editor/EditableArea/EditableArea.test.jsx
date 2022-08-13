@@ -4,7 +4,7 @@ import EditableArea from './EditableArea';
 
 test('renders empty editable area', () => {
   render(<EditableArea />);
-  const element = screen.getByTestId('editable-area');
+  const element = screen.getByRole('textbox');
   expect(element).toBeInTheDocument();
   expect(element).toBeEmptyDOMElement();
 });

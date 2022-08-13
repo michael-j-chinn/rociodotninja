@@ -7,9 +7,9 @@ const modifyText = (command, showUi = false, value = null) =>
 
 function Editor() {
   const buttonOptions = [
-    { text: 'B', styles: 'bold', onClick: () => modifyText('bold') },
-    { text: 'I', styles: 'italic', onClick: () => modifyText('italic') },
-    { text: 'U', styles: 'underline', onClick: () => modifyText('underline') },
+    { icon: 'format_bold', onClick: () => modifyText('bold') },
+    { icon: 'format_italic', onClick: () => modifyText('italic') },
+    { icon: 'format_underlined', onClick: () => modifyText('underline') },
   ];
 
   return (

@@ -6,4 +6,6 @@ test('renders editor', () => {
   render(<Editor />);
   const editor = screen.getByTestId('editor');
   expect(editor).toBeInTheDocument();
+  expect(editor).toContainElement(screen.getByRole('toolbar'));
+  expect(editor).toContainElement(screen.getByRole('textbox'));
 });

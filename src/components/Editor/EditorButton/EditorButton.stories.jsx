@@ -7,21 +7,23 @@ export default {
 };
 
 export function Default() {
-  return <EditorButton />;
+  return <EditorButton icon='account_circle' />;
 }
 
 export function Bold() {
-  return <EditorButton text='B' styles='bold' />;
+  return <EditorButton icon='format_bold' />;
 }
 
 export function Italic() {
-  return <EditorButton text='I' styles='italic' />;
+  return <EditorButton icon='format_italic' />;
 }
 
 export function Underline() {
-  return <EditorButton text='U' styles='underline' />;
+  return <EditorButton icon='format_underlined' />;
 }
 
 export function Clickable() {
-  return <EditorButton text='Ping' onClick={() => alert('pong')} />;
+  return (
+    <EditorButton icon='record_voice_over' onClick={() => alert('pong')} />
+  );
 }

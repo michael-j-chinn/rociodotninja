@@ -1,29 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Icon from '@mui/material/Icon';
 import './EditorButton.css';
 
 function EditorButton(props) {
-  const { styles, text, onClick } = props;
+  const { icon, onClick } = props;
   return (
-    <button
-      type='button'
-      className={`editor-button ${styles}`}
+    <div
+      role='button'
+      tabIndex={0}
+      className='editor-button'
       onClick={onClick}
       onKeyPress={onClick}
     >
-      {text}
-    </button>
+      <Icon>{icon}</Icon>
+    </div>
   );
 }
 
 EditorButton.propTypes = {
-  styles: PropTypes.string,
-  text: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-};
-
-EditorButton.defaultProps = {
-  styles: '',
 };
 
 export default EditorButton;

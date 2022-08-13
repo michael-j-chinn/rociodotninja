@@ -1,4 +1,10 @@
 .editable-area {
-    border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    margin: 0 20px;
+    min-height: 100px;
+}
+
+.editable-area:focus {
+    border: 0;
+    outline: 0px solid transparent;
 }
