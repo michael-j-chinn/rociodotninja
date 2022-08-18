@@ -7,14 +7,15 @@ export default {
 };
 
 export function Default() {
-  return <EditorBar buttons={[]} />;
+  return <EditorBar />;
 }
 
+const mockOnClick = () => 1;
 const buttonOptions = [
-  { text: 'foo' },
-  { text: 'bar' },
-  { text: 'zoo' },
-  { text: 'jar' },
+  { icon: 'accessibility', onClick: mockOnClick },
+  { icon: 'backup', onClick: mockOnClick },
+  { icon: 'camera_roll', onClick: mockOnClick },
+  { icon: 'face', onClick: mockOnClick },
 ];
 
 export function MultipleButtons() {
