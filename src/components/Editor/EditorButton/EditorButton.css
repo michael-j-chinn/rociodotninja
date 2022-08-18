@@ -1,0 +1,15 @@
+.editor-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.editor-button > span {
+    width: 2em;
+}
+
+.editor-button:hover {
+    background-color: #f1f3f4;
+}

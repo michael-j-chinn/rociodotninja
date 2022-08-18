@@ -1,0 +1,9 @@
+.editor-bar {
+    display: flex;
+    height: 44px;
+    margin-bottom: 10px;
+}
+
+.editor-bar > .editor-button:last-child {
+    margin-right: 0px;
+}
