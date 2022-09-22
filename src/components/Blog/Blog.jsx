@@ -10,7 +10,7 @@ function Blog(props) {
   const { id, title, createdDate, content } = props;
   const parsedContent = parser(content);
   return (
-    <Card className='blog' data-testid={`blog-${id}`}>
+    <Card className='blog' data-testid={`blog-${id}`} elevation={6}>
       <CardHeader title={title} subheader={createdDate.toDateString()} />
       <CardContent>{parsedContent}</CardContent>
     </Card>
